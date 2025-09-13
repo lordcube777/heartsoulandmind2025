@@ -1,0 +1,180 @@
+:root {
+	--accent-color-1: #fdd;
+	--accent-color-2: #dfd;
+	--accent-color-3: #def;
+	--accent-color-4: #fed;
+	--accent-color-5: #ffd;
+	--accent-color-6: #edf;
+	--trans-backdrop-filter:saturate(1.8) blur(16px);
+	@media (prefers-color-scheme: light) {
+		--background-color-1:#fff;
+		--background-color-1-trans:#ffffffb3;
+		--background-color-2: #f5f5f5;
+		--background-color-3: #eee;
+		--foreground-color-1: #333;
+		--foreground-color-1-trans: #333333b3;
+		--foreground-color-2: #444;
+		--foreground-color-3: #555;
+	}
+	@media (prefers-color-scheme: dark) {
+		--background-color-1: #000;
+		--background-color-1-trans:#000000cc;
+		--background-color-2: #111;
+		--background-color-3: #222;
+		--foreground-color-1: #ccc;
+		--foreground-color-1-trans: #cccccccc;
+		--foreground-color-2: #bbb;
+		--foreground-color-3: #aaa;
+	}
+	@media (prefers-reduced-transparency) {
+		--background-color-1-trans: var(--background-color-1);
+		--foreground-color-1-trans: var(--foreground-color-1);
+	}
+	--site-inline-size:64em;
+	--content-inline-size:calc(var(--site-inline-size) / 2);
+	--sidebar-inline-size:calc(var(--site-inline-size) / 4);
+	--trans-border:thin solid transparent;
+	--foreground-border:thin solid var(--foreground-color-3);
+	--background-border:thin solid var(--background-color-3);
+	--foreground-shadow: 0 0 0.5em var(--foreground-color-3);
+	--background-shadow: 0 0 0.5em var(--background-color-3);
+	body {
+		margin: 0;
+		font-family: system-ui;
+		color: var(--foreground-color-1);
+		background: var(--background-color-1);
+		* {
+			box-sizing: border-box
+		}
+		a {
+			color: currentcolor;
+			&.site-title,
+			&:hover {
+				text-decoration: none
+			}
+		}
+		abbr {
+			font-variant: all-small-caps
+		}
+		article {
+			h1 {
+				margin-block: 0.67em;
+				font-size: 2em;
+			}
+		}
+		blockquote {
+			margin: 1.5em 0 1.5em 1em;
+			cite {
+				font-size: 0.9em
+			}
+		}
+		button, .button {
+			inline-size: fit-content;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-inline: 1em;
+			padding-block: 0.5em;
+			text-decoration: none;
+			background: var(--foreground-color-3);
+			color: var(--background-color-3);
+			border: var(--background-border);
+			border-radius: 0.5em;
+			box-shadow: var(--background-shadow);
+			.icon {
+				inline-size: 2em;
+				fill: currentcolor;
+				+ .text {
+					margin-inline-start: 1ch
+				}
+			}
+			&:hover {
+				background: var(--background-color-3);
+				color: var(--foreground-color-3);
+				border: var(--foreground-border);
+			}
+		}
+		cite {
+			&.bible {
+				font-style: normal;
+			}
+		}
+		figure {
+			margin: 0;
+			figcaption {
+				margin-inline-start: 1em;
+			}
+		}
+		h1,h2 {
+			font-weight: normal;
+		}
+		h3 {
+			font-weight: 500;
+		}
+		h4 {
+			font-weight: 600;
+		}
+		h5 {
+			font-weight: bold;
+		}
+		.headline-1 {
+			font-size: clamp(2em, 1.091em + 4.545vw, 4em);
+			margin-block:clamp(0.67em, 0.37em + 1.5vw, 1.33em);
+		}
+		.headline-2 {
+			font-size: clamp(1.5em, 0.818em + 3.409vw, 3em);
+			margin-block:clamp(0.83em, 0.453em + 1.886vw, 1.66em);
+		}
+		.headline-3 {
+			font-size: clamp(1.17em, 0.643em + 2.636vw, 2.33em);
+			margin-block:clamp(1em, 0.545em + 2.273vw, 2em);
+		}
+		.headline-4 {
+			font-size: clamp(1rem, 0.545rem + 2.273vw, 2rem);
+			margin-block: clamp(1.33rem, 0.725rem + 3.023vw, 2.66rem)
+		}
+		.icon{
+			display: block;
+			block-size: auto;
+		}
+		img {
+			display: block;
+			inline-size: 100%;
+			block-size: auto
+		}
+		picture {
+			display: block
+		}
+		pre {
+			font-size: clamp(0.7em, 0.6em + 0.625vw, 0.9em);
+			overflow: scroll
+		}
+		span {
+			&.yhwh {
+				font-variant-caps: small-caps
+			}
+		}
+		.screen-reader-only:not(:focus):not(:active) {
+			clip: rect(0 0 0 0);
+			clip-path: inset(50%);
+			block-size: 1px;
+			overflow: hidden;
+			position: absolute;
+			white-space: nowrap;
+			inline-size: 1px;
+		}
+		.yhwh {
+			font-variant: small-caps;
+		}
+		.youtube-embed {
+			margin-block-end: 1em;
+			iframe {
+				display: block;
+				aspect-ratio: 16/9;
+				inline-size: 100%;
+				block-size: auto;
+				border: none
+			}
+		}
+	}
+}
