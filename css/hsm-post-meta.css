@@ -1,0 +1,35 @@
+.post-meta-list {
+	padding-inline: 1em;
+	list-style: none;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	.post-meta-item {
+		display: flex;
+		justify-content:center;
+		.post-meta-link {
+			background: transparent;
+			color: currentcolor;
+			border: none;
+			text-align: center;
+			text-decoration: revert;
+			box-shadow: none;
+			.icon {
+				inline-size: 1em;
+			}
+			&:hover {
+				color: currentcolor;
+				text-decoration: inherit;
+				background-color: transparent;
+				border: none;
+				.icon {
+					fill: var(--foreground-color-1);
+				}
+			}
+		}
+	}
+	@media only screen and (min-width:48em) {
+		flex-flow:row;
+		justify-content: space-evenly;
+	}
+}

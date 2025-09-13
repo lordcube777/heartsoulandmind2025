@@ -1,0 +1,13 @@
+.comment-section{
+	.comment-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		.comment{
+			.comment-article {
+				border-bottom:var(--background-border);
+				max-inline-size: var(--content-inline-size);
+			}
+		}
+	}
+}

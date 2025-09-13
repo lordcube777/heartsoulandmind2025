@@ -1,0 +1,261 @@
+	.main-content {
+		.advertisement {
+			max-inline-size: var(--site-inline-size);
+			margin-inline: auto;
+		}
+	.front-page-hero {
+		margin-block-end: 2em;
+		h2 {
+			display: none;
+		}
+		.front-page-hero-container {
+			aspect-ratio: 4/5;
+			overflow: hidden;
+			margin-inline: auto;
+			display:flex;
+			justify-content: center;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			background-image: url('../assets/images/front-page/hero/front-page-hero-portrait-short-512w.jpg');
+			background-image: image-set(
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-512w.avif' 1x type('image/avif'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-512w.jpg' 1x type('image/jpg'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-768w.avif' 1.5x type('image/avif'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-1024w.avif' 2x type('image/avif'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-1024w.jpg' 2x type('image/jpg'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-1536w.avif' 3x type('image/avif'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-1536w.jpg' 3x type('image/jpg'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-2048w.avif' 4x type('image/avif'),
+				'../assets/images/front-page/hero/front-page-hero-portrait-short-2048w.jpg' 4x type('image/jpg')
+			);
+			border-radius: 1em;
+			align-items: center;
+			.tagline {
+				position:absolute;
+				margin:0;
+				text-align: center;
+				font-style: italic;
+				color: var(--foreground-color-2);
+				text-shadow: var(--background-shadow);
+				background: var(--background-color-1-trans);
+				backdrop-filter: var(--trans-backdrop-filter);
+				border-radius: 1rem;
+				border: var(--background-border);
+				padding-inline:0.2em;
+			}
+		}
+	}
+	.front-page-about {
+		max-inline-size: var(--site-inline-size);
+		margin-inline: auto;
+		margin-block-end: 4em;
+		.about-us-container {
+			aspect-ratio: 9/16;
+			display:flex;
+			justify-content:flex-end;
+			align-items: flex-end;
+			position: relative;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			background-image: url('../assets/images/front-page/about-us/front-page-about-us-portrait-tall-512w.jpg');
+			background-image: image-set(
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-512w.avif' 1x type('image/avif'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-512w.jpg' 1x type('image/jpg'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-768w.avif' 1.5x type('image/avif'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-768w.jpg' 1.5x type('image/jpg'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-1024w.avif' 2x type('image/avif'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-1024w.jpg' 2x type('image/jpg'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-1536w.avif' 3x type('image/avif'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-1536w.jpg' 3x type('image/jpg'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-2048w.avif' 4x type('image/avif'),
+				'../assets/images/front-page/about-us/front-page-about-us-portrait-tall-2048w.jpg' 4x type('image/jpg')
+			);
+			border-radius: 1em;
+			box-shadow: var(--background-shadow);
+			.about-us-text-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				block-size: fit-content;
+				max-block-size:50%;
+				position: absolute;
+				background: var(--background-color-1-trans);
+				backdrop-filter: var(--trans-backdrop-filter);
+				padding-inline: 1em;
+				border-radius: 1em;
+				font-size: clamp(1em, 2.61vw, 1.25em);
+				text-align: center;
+				.about-us-greeting {
+					font-size: 1.5em;
+				}
+				.about-us-bio {
+					margin: 0;
+				}
+				.button {
+					margin-block: 1em;
+				}
+			}
+		}
+	}
+	.front-page-social {
+		max-inline-size: var(--site-inline-size);
+		margin-inline: auto;
+		margin-block-end: 4em;
+		.front-page-social-list {
+			list-style: none;
+			padding-inline-start: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			gap: 2em;
+		}
+	}
+	.front-page-latest-post {
+		max-inline-size: var(--site-inline-size);
+		margin-inline: auto;
+	}
+}
+@media only screen and (prefers-color-scheme: dark) {
+	.main-content {
+		.front-page-about {
+			.about-us-container {
+				background-image: url('../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-512w.jpg');
+				background-image: image-set(
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-512w.avif' 1x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-512w.jpg' 1x type('image/jpg'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-768w.avif' 1.5x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-768w.jpg' 1.5x type('image/jpg'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-1024w.avif' 2x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-1024w.jpg' 2x type('image/jpg'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-1536w.avif' 3x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-1536w.jpg' 3x type('image/jpg'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-2048w.avif' 4x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-dark-portrait-tall-2048w.jpg' 4x type('image/jpg')
+				);
+			}
+		}
+	}
+}
+@media only screen and (min-width:32em) {
+	.main-content {
+		.front-page-hero {
+			.front-page-hero-container {
+				aspect-ratio: 16/9;
+				background-image: url('../assets/images/front-page/hero/front-page-hero-landscape-1024w.avif');
+				background-image: image-set(
+					'../assets/images/front-page/hero/front-page-hero-landscape-1024w.avif' 1x type('image/avif'),
+					'../assets/images/front-page/hero/front-page-hero-landscape-1024w.jpg' 1x type('image/jpg'),
+					'../assets/images/front-page/hero/front-page-hero-landscape-1536w.avif' 1.5x type('image/avif'),
+					'../assets/images/front-page/hero/front-page-hero-landscape-1536w.jpg' 1.5x type('image/jpg'),
+					'../assets/images/front-page/hero/front-page-hero-landscape-2048w.avif' 2x type('image/avif'),
+					'../assets/images/front-page/hero/front-page-hero-landscape-2048w.jpg' 2x type('image/jpg')
+				);
+			}
+		}
+		.front-page-about {
+			.about-us-container {
+				aspect-ratio: 16/9;
+				background-image: url('../assets/images/front-page/about-us/front-page-about-us-landscape-1024w.jpg');
+				background-image: image-set(
+					'../assets/images/front-page/about-us/front-page-about-us-landscape-1024w.avif' 1x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-landscape-1024w.jpg' 1x type('image/jpg'),
+					'../assets/images/front-page/about-us/front-page-about-us-landscape-1536w.avif' 1.5x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-landscape-1536w.jpg' 1.5x type('image/jpg'),
+					'../assets/images/front-page/about-us/front-page-about-us-landscape-2048w.avif' 2x type('image/avif'),
+					'../assets/images/front-page/about-us/front-page-about-us-landscape-2048w.jpg' 2x type('image/jpg')
+				);
+				align-items: center;
+				.about-us-text-container {
+					inline-size: 60%;
+					max-block-size: 100%;
+				}
+			}
+		}
+	}
+	@media only screen and (prefers-color-scheme: dark) {
+		.main-content {
+			.front-page-about {
+				.about-us-container {
+					background-image: url('../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1024w.jpg');
+					background-image: image-set(
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1024w.avif' 1x type('image/avif'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1024w.jpg' 1x type('image/jpg'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1536w.avif' 1.5x type('image/avif'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1536w.jpg' 1.5x type('image/jpg'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-2048w.avif' 2x type('image/avif'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-2048w.jpg' 2x type('image/jpg')
+					);
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:64em) {
+	.main-content {
+		.front-page-hero {
+			.front-page-hero-container {
+				block-size: 36em;
+				aspect-ratio: auto;
+				border-radius: 0;
+				background-image: url('../assets/images/front-page/hero/front-page-hero-ultrawide-1536w.jpg');
+				background-image: image-set(
+					'../assets/images/front-page/hero/front-page-hero-ultrawide-1536w.avif' 1x type('image/avif'),
+					'../assets/images/front-page/hero/front-page-hero-ultrawide-1536w.jpg' 1x type('image/jpg'),
+					'../assets/images/front-page/hero/front-page-hero-ultrawide-2048w.avif' 1.33x type('image/avif'),
+					'../assets/images/front-page/hero/front-page-hero-ultrawide-2048w.jpg' 1.33x type('image/jpg')
+				);
+			}
+		}
+		.front-page-about {
+			.about-us-container {
+				.about-us-text-container {
+					margin-inline-end: 1em;
+				}
+			}
+		}
+	}
+	@media only screen and (prefers-color-scheme: dark) {
+		.main-content {
+			.front-page-about {
+				.about-us-container {
+					background-image: url('../assets/images/front-page/hero/front-page-hero-dark-landscape-1536w.jpg');
+					background-image: image-set(
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1536w.avif' 1x type('image/avif'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-1536w.jpg' 1x type('image/jpg'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-2048w.avif' 1.33x type('image/avif'),
+						'../assets/images/front-page/about-us/front-page-about-us-dark-landscape-2048w.jpg' 1.33x type('image/jpg')
+					);
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:96em) {
+	.main-content {
+		.front-page-hero {
+			.front-page-hero-container {
+				background-size: auto;
+				background-image: url('../assets/images/front-page/hero/front-page-hero-super-ultrawide-2048w.png');
+				background-image: image-set(
+					'../assets/images/front-page/hero/front-page-hero-super-ultrawide-2048w.webp' 1x type('image/webp'),
+					'../assets/images/front-page/hero/front-page-hero-super-ultrawide-2048w.png' 1x type('image/png'),
+					'../assets/images/front-page/hero/front-page-hero-super-ultrawide-3072w.webp' 1.5x type('image/webp'),
+					'../assets/images/front-page/hero/front-page-hero-super-ultrawide-3072w.png' 1.5x type('image/png'),
+					'../assets/images/front-page/hero/front-page-hero-super-ultrawide-4096w.webp' 2x type('image/webp'),
+					'../assets/images/front-page/hero/front-page-hero-super-ultrawide-4096w.png' 2x type('image/png')
+				);
+			}
+		}
+	}
+}
+@media only screen and (max-width: 64em) {
+	.main-content {
+		h2,h3,.post-preview-excerpt {
+			padding-inline: 1em;
+		}
+	}
+}

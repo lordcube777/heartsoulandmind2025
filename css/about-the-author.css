@@ -1,0 +1,15 @@
+.about-the-author {
+	.about-the-author-heading {
+		display:flex;
+		align-items: center;
+		picture {
+			margin-inline-end: 1ch;
+			.author-avatar {
+				border-radius: 50%;
+			}
+		}
+		.author-name {
+			font-size: 1.17em;
+		}
+	}
+}

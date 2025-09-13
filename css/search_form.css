@@ -1,0 +1,11 @@
+.search-form {
+	display: flex;
+	.search-field {
+		font-family: inherit;
+		font-size: inherit;
+		flex: 1;
+		color: var(--foreground-color-1);
+		background: var(--background-color-1);
+		border: none;
+	}
+}

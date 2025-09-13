@@ -1,0 +1,50 @@
+.advertisement {
+    margin-block-end: 2em;
+    inline-size: 100vw;
+    margin-inline: auto;
+    .adsbygoogle {
+        margin-inline: auto;
+        &[data-ad-status="unfilled"] {
+            display: none !important;
+        }
+    }
+    &:before {
+        content: "advertisement";
+        font-size: 0.9em;
+        font-variant-caps: all-small-caps;
+        margin-inline: 1em;
+    }
+}
+@media only screen and (min-width:32em) {
+    .advertisement {
+        &.site-inline-size-ad {
+           inline-size:32em;
+        }
+        &.content-inline-size-ad {
+            inline-size:19.875em;
+        }
+        &.sidebar-inline-size-ad {
+            inline-size: 12em;
+        }
+    }
+
+}
+@media only screen and (min-width:48em) {
+    .advertisement {
+        &.site-inline-size-ad {
+            inline-size: 48em;
+        }
+        &.sidebar-inline-size-ad {
+            inline-size: 16em;
+        }
+    }
+
+}
+@media only screen and (min-width:64em) {
+    .advertisement {
+        &.site-inline-size-ad {
+            inline-size: 64em;
+        }
+    }
+
+}

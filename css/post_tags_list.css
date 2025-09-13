@@ -1,0 +1,8 @@
+.post-tags-list {
+    list-style: circle;
+    padding-inline: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    gap: 1em;
+}

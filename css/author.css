@@ -1,0 +1,39 @@
+.main-content {
+	max-inline-size: var(--site-inline-size);
+	margin-inline: auto;
+	section {
+		margin-block-end: 4em;
+	}
+	.author-bio {
+		border:var(--background-border);
+		border-radius: 1em;
+		box-shadow: var(--background-shadow);
+		.picture {
+			.profile-picture {
+				border-start-start-radius: 1em;
+				border-start-end-radius: 1em;
+			}
+		}
+		.author-bio-text {
+			padding-inline: 1em;
+			.body-text {
+				text-align:justify;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 32em) {
+	.main-content {
+		.author-bio {
+			display:flow-root;
+			.picture {
+				.profile-picture {
+					max-inline-size: 50%;
+					float: inline-start;
+					margin-inline-end: 1em;
+					border-radius: 1em;
+				}
+			}
+		}
+	}
+}

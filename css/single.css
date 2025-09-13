@@ -1,0 +1,189 @@
+.main-content {
+	.breadcrumbs {
+		max-inline-size: var(--site-inline-size);
+		margin-inline: 1em;
+		margin-block: 2em;
+	}
+	.main-post {
+		display: grid;
+		grid-template-areas: "header""sidebar-start""content""sidebar-end";
+		max-inline-size: var(--site-inline-size);
+		margin-inline: auto;
+		margin-block-end: 2em;
+		background: var(--background-color-1);
+		border: var(--background-border);
+		border-radius: 1em;
+		box-shadow: var(--background-shadow);
+		.post-header {
+			grid-area: header;
+			margin-block-end: 2em;
+			.post-heading-group {
+				margin-inline: 1em;
+				text-align: center;
+				.post-title {
+					margin-block-end: 0.5em;
+				}
+				.post-subtitle {
+					margin-block-start: 0;
+					font-size: 1.25em;
+				}
+			}
+			.attribution {
+				margin-inline: 1em;
+			}
+		}
+		.sidebar-container {
+			.sidebar-end-container {
+				.about-the-author {
+					margin-block-start: 1em;
+				}
+				.recommended {
+					.post-preview-list {
+						.post-preview-list-item {
+							border: none;
+							border-radius: 0;
+							box-shadow: none;
+							.post-preview {
+								.post-preview-img-link {
+									.post-preview-picture {
+										.post-preview-img {
+											border: var(--background-border);
+											border-radius: 1em;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.post-content {
+			grid-column: content;
+			h2,h3,h4,h5,h6 {
+				margin-inline: 1rem;
+			}
+			p {
+				text-align: justify;
+				hyphens: auto;
+				margin-inline: 1em;
+				&.poem-stanza {
+					text-align: start;
+					hyphens: none;
+					padding-inline-start: 1em;
+					.poem-line {
+						margin-inline-start: -1em;
+					}
+				}
+				.topic-sentence {
+					font-style: italic;
+				}
+			}
+			.anchor {
+				scroll-margin-block-start: var(--global-header-block-size);
+			}
+		}
+		.footnotes {
+			grid-column: content;
+			.footnotes-heading {
+				margin-inline: 1em;
+			}
+			.footnotes-list {
+				display:grid;
+    			grid: auto-flow/1fr;
+    			gap: 0 3em;
+    			margin-inline-end: 1em;
+			}
+		}
+	}
+	.further-reading {
+		max-inline-size: var(--site-inline-size);
+		border: var(--background-border);
+		border-radius: 1em;
+		box-shadow: var(--background-shadow);
+		.further-reading-heading {
+			margin-inline: 1em;
+		}
+		.further-reading-text {
+			margin-inline: 1em;
+		}
+		.post-tags-list {
+			max-inline-size: var(--content-inline-size);
+			margin-inline: 1em;
+		}
+	}
+}
+@media only screen and (width < 64em) {
+	.main-content {
+		.main-content-ad-slot-1 {
+			display: none !important;
+		}
+	}
+}
+@media only screen and (min-width: 32em) {
+	.main-content {
+		.main-post {
+			grid-auto-flow: dense;
+			grid-template-columns: 1fr 2fr;
+			grid-template-areas: "header header""sidebar content";
+			.post-header {
+				.post-meta-list {
+					flex-flow:row;
+				}
+			}
+			.post-content {
+				.main-post-ad-slot-1 {
+					display: none !important;
+				}
+			}
+			.sidebar-container {
+				display: block;
+				block-size: min-content;
+				position: sticky;
+				top: var(--global-header-block-size);
+			}
+		}
+	}
+}
+@media only screen and (min-width: 48em) {
+	.main-content {
+		.main-post {
+			grid-template-columns: 1fr 3fr;
+			grid-template-areas: "header header""sidebar content""sidebar content";
+			.sidebar-container {
+				min-inline-size: var(--sidebar-inline-size);
+			}
+			.footnotes {
+				.footnotes-list {
+					grid: auto-flow/repeat(2,1fr);
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 64em) {
+	.main-content {
+		.breadcrumbs {
+			margin-inline: auto;
+		}
+		.main-post {
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-areas: "header header header""sidebar-start content sidebar-end";
+			.sidebar-container {
+				display: contents;
+				.sidebar-start-container,
+				.sidebar-end-container {
+					block-size: min-content;
+					position: sticky;
+					top: var(--global-header-block-size);
+				}
+			}
+		}
+	}
+	.further-reading {
+		margin-inline: auto;
+		.post-tags-list {
+			margin-inline: auto;
+		}
+	}
+}

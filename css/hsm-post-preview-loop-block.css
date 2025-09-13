@@ -1,0 +1,14 @@
+.post-preview-list {
+	.post-preview-list-item {
+		grid-template: repeat(5,auto)/1fr;
+		grid-template-rows: subgrid;
+		grid-row: span 5;
+	}
+	@media only screen and (min-width: 32em) {
+		grid-template-columns: repeat(2,1fr);
+	}
+	@media only screen and (min-width: 48em) {
+		grid-template-columns: repeat(4,1fr);
+		gap: 0 1em;
+	}
+}

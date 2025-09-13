@@ -1,0 +1,26 @@
+.section-nav {
+	grid-area: nav;
+	.section-nav-list {
+		list-style: none;
+		ul {
+			padding-inline-start: 1em;
+		}
+		.section-nav-item {
+			.section-nav-link {
+				justify-content:flex-start;
+				background-color: transparent;
+				color: currentcolor;
+				border: none;
+				box-shadow: none;
+				&:hover {
+					color: var(--background-color-1);
+					background-color: var(--foreground-color-3);
+				}
+			}
+		}
+	}
+	.section-nav-lvl-1-list {
+		padding-inline-start: 0;
+		border-left: var(--foreground-border);
+	}
+}

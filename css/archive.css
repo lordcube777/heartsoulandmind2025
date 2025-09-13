@@ -1,0 +1,4 @@
+.main-content {
+	max-inline-size: var(--site-inline-size);
+	margin-inline: auto;
+}

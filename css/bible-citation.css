@@ -1,0 +1,9 @@
+.bible-citation-link {
+    .bible-citation-text {
+        dfn {
+            .bible-translation-abbr {
+                font-variant: all-small-caps;
+            }
+        }
+    }
+}

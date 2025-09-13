@@ -1,0 +1,26 @@
+.footnotes-list {
+    .footnote-list-item {
+        .footnote-container {
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            .footnote-reference-link {
+                padding:0;
+                color: var(--background-color-1);
+                stroke: var(--foreground-color-1);
+                stroke-width: 0.1em;
+                background: transparent;
+                border:none;
+                box-shadow:none;
+                margin-inline-start: 1ch;
+                .icon {
+                    inline-size: 1em;
+                    block-size: 1em;
+                }
+                &:hover {
+                    color: currentcolor;
+                }
+            }
+        }
+    }
+}

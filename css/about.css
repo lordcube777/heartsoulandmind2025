@@ -1,0 +1,680 @@
+.main-content {
+	--section-lvl-2-block-end-margin: 4em;
+	.main-article {
+		max-inline-size: var(--site-inline-size);
+		margin-inline: auto;
+		background: var(--background-color-1);
+		.main-article-header {
+			.main-article-heading {
+				padding-inline: 1em;
+			}
+		}
+		.main-article-content {
+			padding-inline: 1em;
+			.body-text {
+				font-size: clamp(1rem, 1.071rem + 0.476vw, 1.25rem);
+				text-align:center;
+				hyphens: auto;
+				padding-inline: 1em;
+			}
+			.anchor {
+				scroll-margin-block-start: var(--global-header-block-size);
+			}
+			#our-desire {
+				h2,h3 {
+					display: none;
+				}
+				#desire-statement {
+					.image-text-container {
+						background: no-repeat center/contain url('../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-512w.jpg');
+						background: no-repeat center/contain image-set(
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-512w.avif' 1x type('image/avif'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-512w.jpg' 1x type('image/jpg'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-768w.avif' 1.5x type('image/avif'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-1024w.avif' 2x type('image/avif'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-1024w.jpg' 2x type('image/jpg'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-1536w.avif' 3x type('image/avif'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-1536w.jpg' 3x type('image/jpg'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-2048w.avif' 4x type('image/avif'),
+							'../assets/images/about/desire-statement/about-desire-statement-light-portrait-short-2048w.jpg' 4x type('image/jpg')
+						);
+						.text-container {
+							backdrop-filter: saturate(1.8) blur(2px);
+							block-size: 100%;
+							border-radius: 1em;
+							text-shadow: 0.25em 0.25em .5em var(--background-color-3);
+						}
+					}
+				}
+				#introduction {
+					.image-text-container {
+						background: no-repeat center/contain url('../assets/images/about/introduction/about-introduction-light-portrait-short-512w.jpg');
+						background: no-repeat center/contain image-set(
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-512w.avif' 1x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-512w.jpg' 1x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-768w.avif' 1.5x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-1024w.avif' 2x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-1024w.jpg' 2x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-1536w.avif' 3x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-1536w.jpg' 3x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-2048w.avif' 4x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-light-portrait-short-2048w.jpg' 4x type('image/jpg')
+						);
+					}
+				}
+				#heart-soul-and-mind {
+					.image-text-container {
+						background: no-repeat center/contain url('../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-512w.jpg');
+						background: no-repeat center/contain image-set(
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-512w.avif' 1x type('image/avif'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-512w.jpg' 1x type('image/jpg'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-768w.avif' 1.5x type('image/avif'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-1024w.avif' 2x type('image/avif'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-1024w.jpg' 2x type('image/jpg'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-1536w.avif' 3x type('image/avif'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-1536w.jpg' 3x type('image/jpg'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-2048w.avif' 4x type('image/avif'),
+							'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-portrait-short-2048w.jpg' 4x type('image/jpg')
+						);
+					}
+				}
+				#genuine-love {
+					.image-text-container {
+						background: no-repeat center/contain url('../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-512w.jpg');
+						background: no-repeat center/contain image-set(
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-512w.avif' 1x type('image/avif'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-512w.jpg' 1x type('image/jpg'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-768w.avif' 1.5x type('image/avif'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-1024w.avif' 2x type('image/avif'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-1024w.jpg' 2x type('image/jpg'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-1536w.avif' 3x type('image/avif'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-1536w.jpg' 3x type('image/jpg'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-2048w.avif' 4x type('image/avif'),
+							'../assets/images/about/genuine-love/about-genuine-love-light-portrait-short-2048w.jpg' 4x type('image/jpg')
+						);
+					}
+				}
+				#real-faith-for-real-life {
+					.image-text-container {
+						background: no-repeat center/contain url('../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-512w.jpg');
+						background: no-repeat center/contain image-set(
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-512w.avif' 1x type('image/avif'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-512w.jpg' 1x type('image/jpg'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-768w.avif' 1.5x type('image/avif'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-1024w.avif' 2x type('image/avif'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-1024w.jpg' 2x type('image/jpg'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-1536w.avif' 3x type('image/avif'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-1536w.jpg' 3x type('image/jpg'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-2048w.avif' 4x type('image/avif'),
+							'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-portrait-short-2048w.jpg' 4x type('image/jpg')
+						);
+					}
+				}
+				.section-lvl-2 {
+					margin-block-end: var(--section-lvl-2-block-end-margin);
+					.image-text-container {
+						display:flex;
+						position: relative;
+						justify-content:center;
+						align-items: flex-end;
+						aspect-ratio: 4/5;
+						border: var(--background-border);
+						border-radius: 1em;
+						box-shadow: var(--background-shadow);
+						.picture img {
+							border-radius: 1em;
+						}
+						.text-container {
+							display: flex;
+							position: absolute;
+							inline-size: 100%;
+							block-size: 25%;
+							justify-content: center;
+							align-items: center;
+							padding-inline: 1em;
+							background: var(--background-color-1-trans);
+							backdrop-filter: var(--trans-backdrop-filter);
+							border-end-start-radius: 1em;
+							border-end-end-radius: 1em;
+							text-align: center;
+						}
+					}
+				}
+			}
+			#values {
+				.values-list {
+					list-style: none;
+					padding-inline-start: 0;
+					display:grid;
+					grid: auto/repeat(1,1fr);
+					.values-list-item {
+						display:grid;
+						grid-template-rows: subgrid;
+						grid-row: span 2;
+						margin-block: 1em;
+						border: var(--background-border);
+						border-radius: 1em;
+						text-align:center;
+						align-items: center;
+						box-shadow:var(--background-shadow);
+						.community-heading-container {
+							background: var(--accent-color-4);
+						}
+						.creativity-heading-container {
+							background: var(--accent-color-3);
+						}
+						.family-heading-container {
+							background: var(--accent-color-6);
+						}
+						.growth-heading-container {
+							background: var(--accent-color-2);
+						}
+						.harmony-heading-container {
+							background: var(--accent-color-3);
+						}
+						.reverence-heading-container {
+							background: var(--accent-color-5);
+						}
+						.thoughtfulness-heading-container {
+							background: var(--accent-color-2);
+						}
+						.truth-heading-container {
+							background: var(--accent-color-1);
+						}
+						.value-heading-container {
+							border:var(--background-border);
+							border-start-start-radius: 1em;
+							border-start-end-radius: 1em;
+							padding: 1em;
+							.value-icon {
+								display: initial;
+								inline-size:2em;
+								block-size: 2em;
+								fill: var(--foreground-color-1);
+							}
+							.value-heading {
+								margin:0;
+							}
+						}
+						.value-text {
+							padding: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.main-content {
+		.main-article {
+			.main-article-content {
+				#our-desire {
+					#introduction {
+					.image-text-container {
+						background: no-repeat center/contain url('../assets/images/about/introduction/about-introduction-dark-portrait-short-512w.jpg');
+						background: no-repeat center/contain image-set(
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-512w.avif' 1x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-512w.jpg' 1x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-768w.avif' 1.5x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-1024w.avif' 2x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-1024w.jpg' 2x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-1536w.avif' 3x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-1536w.jpg' 3x type('image/jpg'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-2048w.avif' 4x type('image/avif'),
+							'../assets/images/about/introduction/about-introduction-dark-portrait-short-2048w.jpg' 4x type('image/jpg')
+						);
+					}
+				}
+					#heart-soul-and-mind {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-512w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-512w.avif' 1x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-512w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-768w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-1024w.avif' 2x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-1024w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-1536w.avif' 3x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-1536w.jpg' 3x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-2048w.avif' 4x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-portrait-short-2048w.jpg' 4x type('image/jpg')
+							);
+						}
+					}
+					#genuine-love {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-512w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-512w.avif' 1x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-512w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-768w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-1024w.avif' 2x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-1024w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-1536w.avif' 3x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-1536w.jpg' 3x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-2048w.avif' 4x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-portrait-short-2048w.jpg' 4x type('image/jpg')
+							);
+						}
+					}
+					#real-faith-for-real-life {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-512w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-512w.avif' 1x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-512w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-768w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-768w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-1024w.avif' 2x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-1024w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-1536w.avif' 3x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-1536w.jpg' 3x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-2048w.avif' 4x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-portrait-short-2048w.jpg' 4x type('image/jpg')
+							);
+						}
+					}
+				}
+				#values{
+					.values-list {
+						.values-list-item {
+							.community-heading-container {
+								.value-icon {
+									fill: var(--accent-color-4);
+								}
+							}
+							.creativity-heading-container {
+								.value-icon {
+									fill: var(--accent-color-3);
+								}
+							}
+							.family-heading-container {
+								.value-icon {
+									fill: var(--accent-color-6);
+								}
+							}
+							.growth-heading-container {
+								.value-icon {
+									fill: var(--accent-color-2);
+								}
+							}
+							.harmony-heading-container {
+								.value-icon {
+									fill: var(--accent-color-3);
+								}
+							}
+							.reverence-heading-container {
+								.value-icon {
+									fill: var(--accent-color-5);
+								}
+							}
+							.thoughtfulness-heading-container {
+								.value-icon {
+									fill: var(--accent-color-2); 
+								}
+							}
+							.truth-heading-container {
+								.value-icon {
+									fill: var(--accent-color-1);
+								}
+							}
+							.value-heading-container {
+								background: var(--background-color-2);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:32em) {
+	.main-content {
+		.main-article {
+			.main-article-content {
+				#our-desire {
+					#introduction,
+					#genuine-love {
+						.image-text-container {
+							.text-container {
+								justify-content: flex-end;
+								text-align: end;
+							}
+						}
+					}
+					#heart-soul-and-mind,
+					#real-faith-for-real-life {
+						.image-text-container {
+							.text-container {
+								justify-content: flex-start;
+								text-align: start;
+							}
+						}
+					}
+					#desire-statement {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/desire-statement/about-desire-statement-light-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#introduction {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/introduction/about-introduction-light-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/introduction/about-introduction-light-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#heart-soul-and-mind {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#genuine-love {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/genuine-love/about-genuine-love-light-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#real-faith-for-real-life {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					.section-lvl-2 {
+						.image-text-container {
+							aspect-ratio: 16/9;
+							.text-container {
+								block-size: auto;
+							}
+						}
+					}
+				}
+				#values {
+					.values-list {
+						grid: auto/repeat(2,1fr);
+						column-gap: 1em;
+					}
+				}
+			}
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		.main-content {
+		.main-article {
+			.main-article-content {
+				#our-desire {
+					#introduction {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/introduction/about-introduction-dark-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/introduction/about-introduction-dark-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-dark-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#heart-soul-and-mind {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#genuine-love {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/genuine-love/about-genuine-love-dark-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+					#real-faith-for-real-life {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-768w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-768w.avif' 1x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-768w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1024w.avif' 1.33x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1024w.jpg' 1.33x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1536w.avif' 2x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1536w.jpg' 2x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-2048w.avif' 2.66x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-2048w.jpg' 2.66x type('image/jpg')
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:48em) {
+	.main-content {
+		.main-article {
+			.main-article-content {
+				#our-desire {
+					#desire-statement {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/desire-statement/about-desire-statement-light-landscape-1024w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1024w.avif' 1x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1024w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1536w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-1536w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-2048w.avif' 2x type('image/avif'),
+								'../assets/images/about/desire-statement/about-desire-statement-light-landscape-2048w.jpg' 2x type('image/jpg')
+							);
+						}
+					}
+					#introduction {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/introduction/about-introduction-light-landscape-1024w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/introduction/about-introduction-light-landscape-1024w.avif' 1x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1024w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1536w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-1536w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-2048w.avif' 2x type('image/avif'),
+								'../assets/images/about/introduction/about-introduction-light-landscape-2048w.jpg' 2x type('image/jpg')
+							);
+						}
+					}
+					#heart-soul-and-mind {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1024w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1024w.avif' 1x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1024w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1536w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-1536w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-2048w.avif' 2x type('image/avif'),
+								'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-light-landscape-2048w.jpg' 2x type('image/jpg')
+							);
+						}
+					}
+					#genuine-love {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/genuine-love/about-genuine-love-light-landscape-1024w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1024w.avif' 1x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1024w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1536w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-1536w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-2048w.avif' 2x type('image/avif'),
+								'../assets/images/about/genuine-love/about-genuine-love-light-landscape-2048w.jpg' 2x type('image/jpg')
+							);
+						}
+					}
+					#real-faith-for-real-life {
+						.image-text-container {
+							background: no-repeat center/contain url('../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1024w.jpg');
+							background: no-repeat center/contain image-set(
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1024w.avif' 1x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1024w.jpg' 1x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1536w.avif' 1.5x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-1536w.jpg' 1.5x type('image/jpg'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-2048w.avif' 2x type('image/avif'),
+								'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-light-landscape-2048w.jpg' 2x type('image/jpg')
+							);
+						}
+					}
+				}
+				#values {
+					.values-list {
+						grid: auto/repeat(3,1fr);
+					}
+				}
+			}
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		.main-content {
+			.main-article {
+				.main-article-content {
+					#our-desire {
+						#introduction {
+							.image-text-container {
+								background: no-repeat center/contain url('../assets/images/about/introduction/about-introduction-dark-landscape-1024w.jpg');
+								background: no-repeat center/contain image-set(
+									'../assets/images/about/introduction/about-introduction-dark-landscape-1024w.avif' 1x type('image/avif'),
+									'../assets/images/about/introduction/about-introduction-dark-landscape-1024w.jpg' 1x type('image/jpg'),
+									'../assets/images/about/introduction/about-introduction-dark-landscape-1536w.avif' 1.5x type('image/avif'),
+									'../assets/images/about/introduction/about-introduction-dark-landscape-1536w.jpg' 1.5x type('image/jpg'),
+									'../assets/images/about/introduction/about-introduction-dark-landscape-2048w.avif' 2x type('image/avif'),
+									'../assets/images/about/introduction/about-introduction-dark-landscape-2048w.jpg' 2x type('image/jpg')
+								);
+							}
+						}
+						#heart-soul-and-mind {
+							.image-text-container {
+								background: no-repeat center/contain url('../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1024w.jpg');
+								background: no-repeat center/contain image-set(
+									'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1024w.avif' 1x type('image/avif'),
+									'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1024w.jpg' 1x type('image/jpg'),
+									'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1536w.avif' 1.5x type('image/avif'),
+									'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-1536w.jpg' 1.5x type('image/jpg'),
+									'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-2048w.avif' 2x type('image/avif'),
+									'../assets/images/about/heart-soul-and-mind/about-heart-soul-and-mind-dark-landscape-2048w.jpg' 2x type('image/jpg')
+								);
+							}
+						}
+						#genuine-love {
+							.image-text-container {
+								background: no-repeat center/contain url('../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1024w.jpg');
+								background: no-repeat center/contain image-set(
+									'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1024w.avif' 1x type('image/avif'),
+									'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1024w.jpg' 1x type('image/jpg'),
+									'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1536w.avif' 1.5x type('image/avif'),
+									'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-1536w.jpg' 1.5x type('image/jpg'),
+									'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-2048w.avif' 2x type('image/avif'),
+									'../assets/images/about/genuine-love/about-genuine-love-dark-landscape-2048w.jpg' 2x type('image/jpg')
+								);
+							}
+						}
+						#real-faith-for-real-life {
+							.image-text-container {
+								background: no-repeat center/contain url('../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1024w.jpg');
+								background: no-repeat center/contain image-set(
+									'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1024w.avif' 1x type('image/avif'),
+									'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1024w.jpg' 1x type('image/jpg'),
+									'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1536w.avif' 1.5x type('image/avif'),
+									'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-1536w.jpg' 1.5x type('image/jpg'),
+									'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-2048w.avif' 2x type('image/avif'),
+									'../assets/images/about/real-faith-for-real-life/about-real-faith-for-real-life-dark-landscape-2048w.jpg' 2x type('image/jpg')
+								);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:64em) {
+	.main-content{
+		.main-article {
+			.main-article-content {
+				#values {
+					.values-list {
+						grid: auto/repeat(4,1fr);
+					}
+				}
+			}
+		}
+	}
+}

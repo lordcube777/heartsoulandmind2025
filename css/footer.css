@@ -1,0 +1,33 @@
+.global-footer {
+	background-color: var(--background-color-1);
+	border-top: var(--background-border);
+	.footer-nav {
+		max-inline-size: var(--site-inline-size);
+		margin: auto;
+		display: flex;
+		.button {
+			font-size: inherit;
+			background-color: var(--background-color-1);
+			color: currentcolor;
+			border: none;
+			box-shadow: none;
+			&.global-logo {
+				svg {
+					inline-size: 2em
+				}
+				&:hover {
+					background-color: var(--background-color-1);
+					color: var(--foreground-color-1);
+				}
+			}
+			&:hover {
+				background-color: var(--foreground-color-3);
+				color: var(--background-color-1);
+				border: none;
+				svg {
+					fill: var(--foreground-color-1)
+				}
+			}
+		}
+	}
+}

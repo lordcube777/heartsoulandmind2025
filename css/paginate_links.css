@@ -1,0 +1,13 @@
+.paginate-links {
+	display: flex;
+	padding-inline: 1em;
+	padding-block: 1em;
+	ul.page-numbers {
+		list-style: none;
+		padding-inline-start: 0;
+		flex: 0 1 var(--site-inline-size);
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+	}
+}

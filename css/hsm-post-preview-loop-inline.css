@@ -1,0 +1,25 @@
+@media only screen and (min-width:32em) {
+	.post-preview-list {
+		.post-preview-list-item {
+			grid-template: subgrid/16em 1fr;
+			grid-row: span 4;
+			.post-preview {
+				text-align: start;
+				.post-preview-img-link {
+					.post-preview-picture {
+						grid-row: span 4;
+						.post-preview-img {
+							border-start-end-radius: 0;
+							border-end-start-radius: 1em;
+						}
+					}
+				}
+				.post-preview-text-container {
+	        		.post-meta-list {
+	        			flex-flow: row;
+	        		}
+	        	}
+			}
+		}
+	}
+}

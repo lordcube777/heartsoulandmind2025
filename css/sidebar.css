@@ -1,0 +1,13 @@
+.sidebar-container {
+	display: contents;
+	grid-area: sidebar;
+	.sidebar-start-container {
+		grid-area: sidebar-start;
+	}
+	.sidebar-end-container {
+		grid-area: sidebar-end;
+	}
+	.sidebar-item {
+		margin-inline: 1em;
+	}
+}
