@@ -8,9 +8,6 @@ function upload_overrides( $overrides, $file ) {
 }
 function image_filename_override( $dir, $name, $ext ) {
     preg_match('/^(.*)-?(verse|quote|carousel|reel)?-?(light|dark)?-?(landscape|square|standard|portrait-short|portrait-tall).[a-z0-9]+$/U', $name, $name_parts);
-    // if ( $name_parts[4] == 'landscape' ) {
-    //     $name = pathinfo( $name, PATHINFO_FILENAME ) . "-1280w" . $ext;
-    // }
     $unique_name = "$name_parts[1]/$name";
     return $unique_name;
 }
@@ -54,14 +51,14 @@ function hsm_image_resize( $upload, $context ) {
             foreach ( $sizes as $size ) {
                 $output_filename = $dirname . "/" . $filename . "-" . $size . "w." . $extension;
                 $image->scaleImage( $size, $size, true );
-                $image->stripImage();
+                //$image->stripImage();
                 $image->writeImage( $output_filename );
             }
             preg_match('/^(.*)-?(verse|quote|carousel|reel)?-?(light|dark)?-?(landscape|square|standard|portrait-short|portrait-tall).[a-z0-9]+$/U', $name, $name_parts);
             if ( $name_parts[4] == 'landscape' && $extension == 'jpg' || $extension == 'png' ) {
                  $output_filename = $dirname . "/" . $filename . "-1280w." . $extension;
                 $image->scaleImage( 1280, 720, true );
-                $image->stripImage();
+                //$image->stripImage();
                 $image->writeImage( $output_filename );
                 $featured_image = true;
             }
