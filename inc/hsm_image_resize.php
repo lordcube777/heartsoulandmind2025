@@ -9,7 +9,7 @@ function upload_overrides( $overrides, $file ) {
 function image_filename_override( $dir, $name, $ext ) {
     preg_match('/^(.*)-?(verse|quote|carousel|reel)?-?(light|dark)?-?(landscape|square|standard|portrait-short|portrait-tall)-?([0-9]+)?-?([0-9]+w)?.([a-z0-9]+)$/U', $name, $name_parts);
     if ( $name_parts[4] == 'landscape' ) {
-        $name = pathinfo( $name, PATHINFO_FILENAME ) . "-1280w" . $ext
+        $name = pathinfo( $name, PATHINFO_FILENAME ) . "-1280w" . $ext;
     }
     $new_dir = $name_parts[1];
     if ( is_writable( $dir . "/" . $new_dir ) ) {
