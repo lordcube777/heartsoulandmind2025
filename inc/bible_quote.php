@@ -55,13 +55,15 @@ function get_bible_quote( $args, $contents = null ){
     $output .= $contents;
     if ( $args['type'] == 'inline' ) {
         $output .= "</q>";
+        $output .= add_footnote( '', $citation );
     } elseif ( $args['type'] == 'block' || $args['type'] == 'figure' ) {
         $output .= "</blockquote>";
+        if ( $args['type'] == 'block' ) {
+            $output .= add_footnote( '', $citation );
+        }
     }
     if ( $args['type'] == 'figure' ) {
         $output .= "<figcaption class='bible-quote-figcaption'>($citation)</figcaption></figure>";
-    } elseif ( $args['type'] == 'inline' ) {
-        $output .= add_footnote( '', $citation );
     }
     return $output;
 }
