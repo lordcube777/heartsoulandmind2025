@@ -24,7 +24,11 @@ function get_internal_link( $atts, $content = null ) {
 			'posts_per_page' => '1',
 		);
 		$query = get_posts( $query_args );
-		$url = get_permalink($query[0]);
+		if ( hsm_error_check( $query ) ) {
+			$url = get_home_url();
+		} else {
+			$url = get_permalink($query[0]);
+		}
 	} elseif ( $args['type'] == 'page' ) {
 		$query_args = array(
 			'page_id' => $args['id'],
@@ -35,7 +39,11 @@ function get_internal_link( $atts, $content = null ) {
 			'posts_per_page' => '1',
 		);
 		$query = get_posts( $query_args );
-		$url = get_permalink($query[0]);
+		if ( hsm_error_check( $query ) ) {
+			$url = get_home_url();
+		} else {
+			$url = get_permalink($query[0]);
+		}
 	} elseif ( $args['type'] == 'category' ) {
 		$query_args = array(
 			'taxonomy' => array( 'category' ),
@@ -44,7 +52,11 @@ function get_internal_link( $atts, $content = null ) {
 			'fields' => 'ids',
 		);
 		$term_query = get_terms( $query_args );
-		$url = get_term_link($term_query[0]);
+		if ( hsm_error_check( $term_query ) ) {
+			$url = get_home_url();
+		} else {
+			$url = get_term_link($term_query[0]);
+		}
 	} elseif ( $args['type'] == 'tag' ) {
 		$query_args = array(
 			'taxonomy' => array( 'post_tag' ),
@@ -52,7 +64,11 @@ function get_internal_link( $atts, $content = null ) {
 			'number' => 1,
 		);
 		$term_query = get_terms( $query_args );
-		$url = get_term_link($term_query[0]);
+		if ( hsm_error_check( $term_query ) ) {
+			$url = get_home_url();
+		} else {
+			$url = get_term_link($term_query[0]);
+		}
 	} elseif ( $args['type'] == 'author' ) {
 		$query_args = array(
 			'exclude'        => array( 1 ),
@@ -69,7 +85,11 @@ function get_internal_link( $atts, $content = null ) {
 			];
 		}
 		$user_query = get_users( $query_args );
-		$url = get_author_posts_url( $user_query[0]->ID );
+		if ( hsm_error_check( $user_query ) ) {
+			$url = get_home_url();
+		} else {
+			$url = get_author_posts_url( $user_query[0]->ID );
+		}
 	}
 	if ( $args['html'] ) {
 		if ( $args['class'] ) {
