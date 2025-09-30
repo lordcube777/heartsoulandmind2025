@@ -23,10 +23,9 @@ function image_transparency_check( $image, $width, $height ) {
         for ($x = 0; $x < $width; $x++) {
             $rgb = imagecolorat($image, $x, $y);
             $colors = imagecolorsforindex($image, $rgb);
-            // Alpha value ranges from 0 (opaque) to 127 (fully transparent)
             if ($colors['alpha'] > 0 && $colors['alpha'] < 127) {
                 imagedestroy($image);
-                return true; // Found a partially or fully transparent pixel
+                return true;
             }
         }
     }
@@ -76,7 +75,7 @@ function hsm_image_resize( $move_new_file, $file, $new_file ) {
                 switch( $extension ) {
                 case 'avif':
                     $quality = 70;
-                    //imageavif( $image, $output_filename, $quality, 0 );
+                    imageavif( $image, $output_filename, $quality, 0 );
                     break;
                 case 'jpg':
                     $quality = 70;
