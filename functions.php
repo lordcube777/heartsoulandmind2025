@@ -43,6 +43,7 @@ include get_theme_file_path( 'inc/disable_emoji.php');
 include get_theme_file_path( 'inc/disable_rss.php');
 include get_theme_file_path( 'inc/disable_image_generation.php');
 include get_theme_file_path( 'inc/file_download_link.php');
+include get_theme_file_path( 'inc/hsm_error_check.php' );
 include get_theme_file_path( 'inc/hsm_image_resize.php' );
 include get_theme_file_path( 'inc/insert_ads.php');
 include get_theme_file_path( 'inc/internal_link.php');
